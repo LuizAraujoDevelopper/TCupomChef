@@ -1,0 +1,59 @@
+body {
+    text-align: center;
+    padding-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+#nome,
+#comentario {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.estrelas input[type=radio] {
+    display: none;
+}
+
+.estrelas label i.fa {
+    font-size: 2.5em;
+}
+
+.estrelas label i.fa:before {
+    content: '\f005';
+    color: #FC0;
+}
+
+.estrelas input[type=radio]:checked~label i.fa:before {
+    color: #CCC;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.comentario {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin: 0 auto 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px; /* Define a largura máxima do comentário */
+    word-wrap: break-word; 
+}
+
+.estrelasSelecionadas {
+    color: #FC0;
+}
